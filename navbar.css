@@ -1,0 +1,108 @@
+/* <!------------------------------ General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* <!------------------------------ Nav Bar --> */
+
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  display: flex;
+}
+
+#logo {
+  width: 10%;
+  /* border: 2px solid white; */
+  padding: 2px 5px;
+}
+#logo img {
+  float: right;
+}
+
+nav #container {
+  width: 88%;
+  /* border: 2px solid white; */
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #container h1 {
+  /* border: 2px solid white; */
+  color: white;
+}
+
+nav #container #bar > ul {
+  list-style: none;
+}
+
+#container #bar > ul > li {
+  /* border: 2px solid white; */
+  margin: auto 10px;
+  display: inline;
+}
+
+#container #bar > ul > li > a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+#container #bar > ul > li > a:hover {
+  text-shadow: 0px 1px whitesmoke;
+}
+
+/*---------------------------- LAST SCROLL BUTTON */
+
+#scrol_button .fas {
+  font-size: 40px;
+  color: blue;
+  /* float: right; */
+  bottom: 5px;
+  right: 5px;
+  position: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#scrol_button .fas:hover {
+  border: 1px solid blue;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*---------------------------- MEDIA QUERY */
+
+@media only screen and (min-width: 625px) and (max-width: 780px) {
+  nav #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 624px) {
+  nav #container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #container #bar > ul > li {
+    display: block;
+    margin: 5px 0px;
+  }
+}

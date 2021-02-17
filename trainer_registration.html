@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="trainer_seeker_registration.css" />
+
+    <title>Trainer Registration Form</title>
+  </head>
+  <body>
+    <!-- Trainer registration form -->
+
+    <div id="wrap">
+      <h1>Trainer Registration Form</h1>
+      <p id="subheading">
+        Kindly fill this form to register as a trainer. All fields are mandatory
+        and your profile will be shown on page. Make sure that all the given
+        data is correct,Otherwise your profile will be deleted by admin.
+      </p>
+
+      <form action="" id="trainer_form">
+        <!-- maxlength works only on text input type -->
+
+        <input
+          type="text"
+          placeholder="Name:"
+          maxlength="10"
+          id="tName"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Gender:"
+          maxlength="6"
+          id="tGender"
+          required
+        />
+        <input type="number" placeholder="Age:" id="tAge" required />
+        <input
+          type="email"
+          placeholder="Email:"
+          maxlength="20"
+          id="tEmail"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Contact no: (+92....)"
+          id="tContact"
+          required
+        />
+        <input
+          type="text"
+          placeholder="City:"
+          maxlength="12"
+          id="tCity"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Address:"
+          maxlength="50"
+          id="tAddress"
+          required
+        />
+        <input
+          type="number"
+          placeholder="CNIC no: (with dashes)"
+          id="tCnic"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Experience (years):"
+          id="tExp"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Bank Account no: (with dashes)"
+          id="tBank"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Type name of service:"
+          id="tService"
+          required
+        />
+
+        <div id="buttons">
+          <input type="button" value="Reset" />
+          <input type="submit" value="Submit" onclick="trainer_validate()" />
+        </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="trainerDatabase.js"></script>
+  </body>
+</html>

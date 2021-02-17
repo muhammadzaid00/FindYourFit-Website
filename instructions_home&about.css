@@ -1,0 +1,189 @@
+/* <!-------------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: gainsboro;
+}
+
+/* --------------------------Instructions paragrapgh FOR BOTH PAGES HOME and ABOUT*/
+
+#instruction_container {
+  width: 70%;
+  padding: 40px 0px;
+  /* border: 2px solid black; */
+}
+
+#instruction_container > p {
+  /* border: 2px solid black; */
+  text-align: justify;
+  padding: 15px 5px;
+  width: 60%;
+  margin: 0px auto;
+  text-align: justify;
+}
+
+#instruction_container > h1 {
+  /* border: 2px solid black; */
+  color: black;
+  text-align: center;
+  padding: 10px 2px;
+}
+
+#instruction {
+  width: 90%;
+  padding: 25px;
+  margin: 0px auto;
+}
+
+#instruction > p {
+  text-align: justify;
+  padding: 10px 5px;
+  /* border: 2px solid black; */
+}
+
+#instruction > h5 {
+  font-size: 20px;
+  padding: 5px 0px;
+  color: green;
+}
+
+#instruction_container > h1:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------where ID = nextpage */
+
+#instruction_container #next_page {
+  width: 60%;
+  margin: 0px auto;
+  /* border: 2px solid black; */
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  align-self: center;
+  padding: 5px 10px;
+  justify-content: space-evenly;
+  display: flex;
+}
+#instruction_container #next_page a {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+  /* border: 2px solid black; */
+}
+
+#instruction_container #next_page > a:hover {
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+/*-------------------------- SIDE IMAGE ON ABOUT PAGE*/
+
+#forboth_containers #sideimage {
+  margin: 10px;
+  width: 30%;
+  background: url(img/aboutpage.jpg) no-repeat center center;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+/* --------------------------FAQ SECTION ON HOME PAGE*/
+
+#forboth_containers {
+  display: flex;
+  flex-direction: row;
+}
+
+#faq_container {
+  height: fit-content;
+  border: 2px solid grey;
+  padding: 20px 20px;
+  width: 25%;
+  margin-top: 50px;
+}
+
+#faq_container > h3 {
+  border: 2px solid green;
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 5px;
+}
+
+#faq_container #questions_container {
+  /* border: 2px solid black; */
+  margin-top: 20px;
+}
+
+#faq_container #questions_container h6 {
+  color: green;
+  border: 2px solid black;
+  font-size: 14px;
+  margin: 5px;
+  padding: 10px 5px;
+  border-radius: 20px;
+  box-shadow: 2px 3px #222222;
+  cursor: pointer;
+}
+
+#faq_container #questions_container h6 > .fas {
+  float: right;
+  /* border: 2px solid black; */
+  font-size: 14px;
+  color: green;
+  padding: 4px;
+}
+
+#faq_container #questions_container .answer {
+  /* border: 2px solid black; */
+  padding: 0px 10px;
+  border-left: 2px solid green;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 0.5s ease-in;
+}
+
+/* --------------------------MEDIA QUERY */
+@media only screen and (min-width: 200px) and (max-width: 970px) {
+  #forboth_containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #instruction_container {
+    width: 100%;
+  }
+  #faq_container {
+    width: 50%;
+    margin: 0px auto 20px auto;
+  }
+
+  #forboth_containers #sideimage {
+    margin: 20px auto;
+    width: 100%;
+    height: 400px;
+    background: url(img/aboutpage.jpg) no-repeat center center;
+    background-size: cover;
+    border: 2px solid black;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  #instruction_container #next_page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #instruction_container #next_page a {
+    padding: 0px;
+  }
+}

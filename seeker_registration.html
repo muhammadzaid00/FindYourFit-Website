@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="trainer_seeker_registration.css" />
+
+    <title>Seeker Registration Form</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>Seeker Registration Form</h1>
+      <p id="subheading">
+        You need to fill this form to hire a personal trainer. All fields are
+        mandatory and you can see your process in History tab after submitting
+        it. Read intuctions in History tab to proceed further.
+      </p>
+
+      <form action="" id="seeker_form">
+        <!-- maxlength works only on text input type -->
+
+        <input
+          type="text"
+          placeholder="Name:"
+          maxlength="10"
+          id="sName"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Gender:"
+          maxlength="6"
+          id="sGender"
+          required
+        />
+        <input type="number" placeholder="Age:" id="sAge" required />
+        <input
+          type="email"
+          placeholder="Email:"
+          maxlength="20"
+          id="sEmail"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Contact no: (+92....)"
+          id="sContact"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Name of selected trainer:"
+          maxlength="20"
+          id="sTrainer"
+          required
+        />
+        <input
+          type="text"
+          placeholder="City:"
+          maxlength="6"
+          id="sCity"
+          required
+        />
+        <input type="text" placeholder="Address:" id="sAddress" required />
+        <input
+          type="text"
+          placeholder="Type name of service:"
+          id="sService"
+          required
+        />
+
+        <!--
+            <p>Select service(s) that you want from trainer:</p><br>
+
+            <input type="checkbox" name="mysp1">
+            <label for="mysp1"> Yoga</label><br>
+
+            <input type="checkbox" name="mysp2">
+            <label for="mysp2"> Massage</label><br>
+
+            <input type="checkbox" name="mysp3">
+            <label for="mysp3"> Physical Exercises</label><br>
+
+            <input type="checkbox" name="mysp4">
+            <label for="mysp4"> Manual Therapy</label><br>
+
+            <input type="checkbox" name="mysp5">
+            <label for="mysp5"> Rehabilitation</label><br>
+
+            <input type="checkbox" name="mysp6">
+            <label for="mysp6"> Body fitness </label><br>
+
+            <input type="checkbox" name="mysp7">
+            <label for="mysp7"> Weight loss / Weight gain </label><br>
+
+            <input type="checkbox" name="mysp8">
+            <label for="mysp8"> Healthy Diet Plan </label><br>
+
+
+
+            <p>Do you have prefrence for male or female trainer?</p><br>
+
+            <input type="radio" name="mypref">
+            <label for="mypref"> Yes</label><br>
+
+            <input type="radio" name="mypref">
+            <label for="mypref"> No</label><br>
+
+
+
+             <p>How many people will take part in session:</p><br>
+
+            <input type="radio" name="mypeople">
+            <label for="mypeople"> 1 Person</label><br>
+            
+            <input type="radio" name="mypeople">
+            <label for="mypeople"> 2 Persons</label><br>
+
+            <input type="radio" name="mypeople">
+            <label for="mypeople"> Group of Persons</label><br>
+
+
+
+
+            <p>Do you have any existing injuries or health issues that your trainer should know about?</p><br>
+            
+            <input type="checkbox" name="myissue1">
+            <label for="myissue1"> Asthma</label><br>
+
+            <input type="checkbox" name="myissue2">
+            <label for="myissue2"> Back problems</label><br>
+
+            <input type="checkbox" name="myissue3">
+            <label for="myissue3"> Joint pain</label><br>
+
+            <input type="checkbox" name="myissue4">
+            <label for="myissue4"> Other injuiry or medical problem</label><br>
+    
+
+
+            <p>How often do you currently exercise:</p><br>
+
+            <input type="radio" name="myexercise">
+            <label for="myexerise"> 0 times per week</label><br>
+            
+            <input type="radio" name="myexercise">
+            <label for="myexerise"> 1-2 times per week</label><br>
+
+            <input type="radio" name="myexercise">
+            <label for="myexerise"> 3-5 times per week</label><br>
+
+            <input type="radio" name="myexercise">
+            <label for="myexerise"> Daily</label><br>
+
+
+
+            <p>Choose location where you would like training to take place?</p><br>
+
+            <input type="radio" name="myplace">
+            <label for="myplace"> Trainer's gym</label><br>
+
+            <input type="radio" name="myplace">
+            <label for="myplace"> My house</label><br>
+
+            <input type="radio" name="myplace">
+            <label for="myplace"> Outdoor public space</label><br>
+
+
+
+            <p>When do you require personal training?</p><br>
+
+            <input type="radio" name="mytime">
+            <label for="mytime"> In next few days</label><br>
+
+            <input type="radio" name="mytime">
+            <label for="mytime"> As soon as possible</label><br>
+
+            <input type="radio" name="mytime">
+            <label for="mytime"> Decide later</label><br>
+
+
+            
+            <p>How often would you like to see the trainer?</p><br>
+
+            <input type="radio" name="mysee">
+            <label for="mysee"> 1-2 times per week</label><br>    
+
+            <input type="radio" name="mysee">
+            <label for="mysee"> 3-5 times per week</label><br>  
+
+            <input type="radio" name="mysee">
+            <label for="mysee"> Daily </label><br>  
+
+
+
+            <p>Which training time suit you most?</p><br>
+
+            <input type="radio" name="mytime">
+            <label for="mytime"> Morning</label><br> 
+
+            <input type="radio" name="mytime">
+            <label for="mytime"> Evening</label><br> 
+
+
+
+            <p>How long your training time will be?</p><br>
+
+            <input type="radio" name="trainingperiod">
+            <label for="trainingperiod"> 1 month</label><br>    
+
+            <input type="radio" name="trainingperiod">
+            <label for="trainingperiod"> 2 months</label><br>  
+
+            <input type="radio" name="trainingperiod">
+            <label for="trainingperiod"> 3 months </label><br>  
+
+            <input type="radio" name="trainingperiod">
+            <label for="trainingperiod"> 6 months </label><br>  
+ -->
+
+        <div id="buttons">
+          <input type="button" value="Reset" onclick="reset_function()" />
+          <input type="submit" value="Submit" onclick="seeker_validate()" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function reset_function() {
+        document.getElementById("seeker_form").reset();
+      }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+    <script src="both_reg.js"></script>
+  </body>
+</html>

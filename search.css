@@ -1,0 +1,63 @@
+/* <!-- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HEADER TRAINER */
+
+#header_trainer_container {
+  width: 100%;
+  background: url(img/headertrainer.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 300px 20px;
+}
+
+/* <!-- SEARCH BAR --> */
+
+#search_container {
+  width: 100%;
+}
+
+#search_box {
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+#search_box #search {
+  width: 40%;
+  border: 2px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+  padding: 10px;
+  outline: none;
+  color: grey;
+}
+
+#search:focus {
+  color: #000;
+  box-shadow: 0 0 5px rgb(21, 9, 9);
+}
+
+#search_btn {
+  width: 8%;
+  padding: 2px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  font: 16px;
+  outline: none;
+}

@@ -1,0 +1,153 @@
+/* <!----------------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  /* background-color: rgba(197, 190, 190, 0.76); */
+  background-color: gainsboro;
+}
+
+/* <!----------------------------- SERVICES SECTION --> */
+
+#services_wrap {
+  /* border: 2px solid black; */
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+}
+
+#wrapper {
+  display: flex;
+  /* border: 2px solid black; */
+}
+
+#left_wrapper {
+  width: 50%;
+  height: 300px;
+}
+
+#left_wrapper #text {
+  margin: 90px auto;
+  /* border: 2px solid black; */
+}
+#service_name,
+#service_description {
+  width: 70%;
+  padding: 5px 0px;
+  margin: 0px auto;
+  /* border: 2px solid black; */
+}
+#service_buttons {
+  width: 70%;
+  padding: 5px 0px;
+  margin: 0px auto;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+#service_buttons > a {
+  color: white;
+  margin: 0px auto;
+  text-decoration: none;
+  align-content: space-around;
+  border: 2px solid black;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+#service_buttons > a:hover {
+  background-color: white;
+  color: black;
+}
+
+#service_description {
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+
+#right_wrapper1 {
+  width: 50%;
+  height: 350px;
+  background: url(img/yoga.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper2 {
+  width: 50%;
+  height: 350px;
+  background: url(img/massage.jpg) no-repeat center center;
+  background-size: cover;
+}
+#right_wrapper3 {
+  width: 50%;
+  height: 350px;
+  background: url(img/physicalexercises.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper4 {
+  width: 50%;
+  height: 350px;
+  background: url(img/manualtherapy.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper5 {
+  width: 50%;
+  height: 350px;
+  background: url(img/rehabilitation.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper6 {
+  width: 50%;
+  height: 350px;
+  background: url(img/bodyfitness.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper7 {
+  width: 50%;
+  height: 350px;
+  background: url(img/weight.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#right_wrapper8 {
+  width: 50%;
+  height: 350px;
+  background: url(img/healthydiet.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 890px) and (max-width: 1000px) {
+  #left_wrapper #text {
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 880px) {
+  #service_description {
+    display: none;
+  }
+  #service_buttons {
+    flex-direction: column;
+  }
+  #service_buttons > a {
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 560px) {
+  #service_name {
+    margin: 2px 1px;
+  }
+}

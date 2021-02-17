@@ -1,0 +1,50 @@
+/* <!--------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+/* <!--------------------- Steps section --> */
+
+#steps_container {
+  width: 90%;
+  margin: 0px auto;
+  background-color: whitesmoke;
+  padding: 25px;
+  /* border: 2px solid black; */
+}
+
+#steps_container > h1 {
+  /* border: 2px solid black; */
+  text-align: center;
+  padding: 20px 5px;
+}
+
+#steps_container > h1:hover {
+  text-decoration: underline;
+}
+
+#steps_container > h2 {
+  /* border: 2px solid black; */
+  padding: 10px 15px;
+  color: green;
+}
+
+#steps_container > h6 {
+  /* border: 2px solid black; */
+  padding: 5px 15px;
+  font-size: 14px;
+  color: blue;
+}
+
+#steps_container #mysteps {
+  padding: 10px 15px;
+}

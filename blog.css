@@ -1,0 +1,126 @@
+                                                  
+                                                  /* <!-- NAVIGATION BAR --> */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* BLOGS */
+
+#blog_container1,
+#blog_container3,
+#blog_container5,
+#blog_container7{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: gainsboro;
+    margin: 0px auto;
+}
+
+#blog_container2,
+#blog_container4,
+#blog_container6,
+#blog_container8{
+
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(192, 190, 190);
+    margin: 0px auto;
+}
+
+#blog_container1 > h1,
+#blog_container2 > h1,
+#blog_container3 > h1,
+#blog_container4 > h1,
+#blog_container5 > h1,
+#blog_container6 > h1,
+#blog_container7 > h1,
+#blog_container8 > h1{
+
+    font-size: 20px;
+    text-align: center;
+    color: rgb(214, 9, 9);
+    
+}
+#manual_therapy{
+    width: 90%;
+    /* border: 2px solid black; */
+    padding: 20px 10px;
+    text-align: left;
+    margin: 0 auto;
+}
+#blog_container1 p,
+#blog_container2 p,
+#blog_container3 p,
+#blog_container4 p,
+#blog_container5 p,
+#blog_container6 p,
+#blog_container7 p,
+#blog_container8 p{
+
+    color: black;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 10px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+
+figure img{
+    
+    height: 200px;
+    margin: 20px;
+    float: right;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+
+#blog_container1 > h1:hover,
+#blog_container2 > h1:hover,
+#blog_container3 > h1:hover,
+#blog_container4 > h1:hover,
+#blog_container5 > h1:hover,
+#blog_container6 > h1:hover,
+#blog_container7 > h1:hover,
+#blog_container8 > h1:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgb(214, 9, 9);
+}
+
+figure img:hover{
+    opacity: 1;
+}
+
+h4{
+    color: blue;
+}
+
+#manual_therapy #paragrapgh{
+    text-indent: 10px;
+}
+
+#benefits{
+    text-indent: 10px;
+}
+
+#highlight{
+    
+    font-style: italic;
+}
+
+#fruitlist{
+    list-style-type: disc;
+    margin-left: 2%;
+    font-size: 13px;
+}

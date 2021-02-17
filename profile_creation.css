@@ -1,0 +1,102 @@
+/* <!---------------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* TRAINERS REGISTRATION BUTTON */
+
+#trainers_reg {
+  width: 90%;
+  background-color: green;
+  margin: 10px auto;
+  padding: 20px;
+}
+#trainers_reg > #inner_sec {
+  /* border: 2px solid blue; */
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#trainers_reg > #inner_sec > a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+}
+
+#trainers_reg > #inner_sec > a:hover {
+  text-decoration: underline;
+}
+
+/* TRAINERS PROFILE CEATION */
+
+#profile_container {
+  border: 2px solid green;
+  background-color: gainsboro;
+  margin: 0px;
+}
+
+#profile_section {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 60%;
+  background-color: black;
+  margin: 20px auto;
+  padding: 10px;
+}
+#profile_section > h2 {
+  border: 2px solid black;
+  background-color: white;
+  width: 70%;
+  margin: 10px auto;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+#profile_section > h3 {
+  width: 25%;
+  color: green;
+  font-weight: bold;
+  border-bottom: 2px solid green;
+  margin: 10px;
+}
+
+#profile_section > h5 {
+  color: white;
+  width: 40%;
+  margin: 5px auto;
+  padding: 5px;
+  border: 2px solid white;
+  float: left;
+}
+
+#trainers_profile > #hire {
+  width: 20%;
+  /* border: 2px solid blue; */
+  margin-top: 145px;
+}
+
+#trainers_profile > #hire > a {
+  border: 2px solid green;
+  text-decoration: none;
+  background-color: green;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+#trainers_profile > #hire > a:hover {
+  background-color: white;
+  color: green;
+}

@@ -1,0 +1,108 @@
+/* <!-- General CSS --> */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#contact{
+    width: 100%;
+    background-color: black;
+    padding: 100px 20px 0px 40px;
+    
+}
+
+#contact h1{
+    /* border: 2px solid black; */
+    font-size: 30px;
+    color: white;
+    width: 30%;
+    text-align:left;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+
+                                                        /* FORM SECTION */
+#main_form{
+    background: url("img/contact.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding: 30px 10px;
+    /* border: 2px solid black; */
+    
+}
+#main_form h1{
+    color: rgb(214, 9, 9);
+    width: 25%;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: rgb(223, 222, 222);
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+#main_form #myform{
+    width: 50%;
+    padding: 30px 0px;
+    /* border: 2px solid black; */
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#main_form #myform #text, #email{
+    width: 40%;
+    padding: 10px 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgb(223, 222, 222);
+    
+}
+
+#main_form #childtextarea{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+}
+#main_form #childtextarea #area{
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid white;
+    outline: none;
+    resize: none;
+    background-color: rgb(223, 222, 222);
+    
+}
+
+#main_form #subscribe{
+    width: 30%;
+    /* border: 2px solid green; */
+    margin: 5px auto;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#main_form > #subscribe button{
+
+    background-color: rgb(214, 9, 9);
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+}
+
+#main_form > #subscribe button:hover{
+    cursor: pointer;
+}

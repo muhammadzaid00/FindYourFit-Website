@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c1fde17a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="trainerspage.css" />
+    <link rel="stylesheet" href="profile_creation.css" />
+
+    <title>Trainers | Find Your Fit</title>
+  </head>
+  <body>
+    <!---------------------------- Navigation Bar -->
+
+    <nav>
+      <div id="logo">
+        <img src="img/logo.png" alt="" height="40px" width="40px" />
+      </div>
+
+      <div id="container">
+        <div id="name">
+          <h1>Find Your Fit</h1>
+        </div>
+
+        <div id="bar">
+          <ul>
+            <li><a href="myhome.html" class="active">Home </a></li>
+            <li><a href="myabout.html">About </a></li>
+            <li><a href="myservices.html">Services </a></li>
+            <li><a href="mytrainer.html">Trainers </a></li>
+            <li><a href="myblogs.html">Blogs </a></li>
+            <li><a href="myhistory.html">My History </a></li>
+            <li><a href="mycontact.html">Contact </a></li>
+            <li><a href="#" id="logout_tab">Logout </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!---------------------------- HEADER OF TRAINERS PAGE -->
+
+    <div id="header_trainer_container">
+      <div id="search_container">
+        <div id="search_box">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for trainer by Trainer name/City Name..."
+          />
+
+          <button type="submit" id="search_btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!----------------------------  TRAINERS REGISTRATION SECTION -->
+    <div id="trainers_reg">
+      <div id="inner_sec">
+        <a href="trainer_registration.html" target="blank">
+          Click here to Register as Trainer</a
+        >
+      </div>
+    </div>
+
+    <!----------------------------  TRAINERS PROFILE CREATION SECTION -->
+    <div id="profile_container">
+      <div id="profile_section">
+        <h2>MUHAMMAD HAMZA</h2>
+        <h3>Personal Information:</h3>
+        <h5>Gender: Male</h5>
+        <h5>Age: 20 years</h5>
+        <h5>Email: mhamza1234@gmail.com</h5>
+        <h5>City: Lahore</h5>
+        <h5>Address: B-Block, Valencia Town</h5>
+        <h5>CNIC: 35304-4480058-3</h5>
+        <h5>Experience: 5 years</h5>
+        <h5>Service: Yoga</h5>
+      </div>
+    </div>
+
+    <!---------------------------- BEST TRAINERS SECTION -->
+    <div id="besttrainer_container">
+      <h1>BEST TRAINERS</h1>
+      <div id="team_container">
+        <div id="first_trainer">
+          <img class="fit" src="img/member-1.png" alt="" />
+          <h1>FRED S.</h1>
+          <p>Fitness expert having experience more than 5 years.</p>
+        </div>
+
+        <div id="first_trainer">
+          <img class="fit" src="img/member-2.png" alt="" />
+          <h1>MARGRET E.</h1>
+          <p>Yoga Specialist having experience more than 3 years.</p>
+        </div>
+
+        <div id="first_trainer">
+          <img class="fit" src="img/member-3.png" alt="" />
+          <h1>SARAH M.</h1>
+          <p>Manual Therapy expert having experience more than 3 years.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- FOOTER SECTION -->
+
+    <div id="footer_wrap">
+      <div id="about_wrap">
+        <p id="about_heading">ABOUT US</p>
+        <p id="about_line">
+          We are hiring trainers for fitness seekers. Fitness seekers can search
+          and find their trainer through our website. Trainers also can register
+          themselves for training.
+        </p>
+      </div>
+
+      <div id="address_wrap">
+        <p id="address_heading">ADDRESS</p>
+
+        <i class="fa fa-map-marker"></i>
+        <p id="personal_text">Lahore, Pakistan</p>
+        <br />
+        <i class="fa fa-whatsapp"></i>
+        <p id="personal_text">+92-303-6223609</p>
+        <br />
+        <i class="fa fa-envelope-o"></i>
+        <p id="personal_text">mzaid6752@gmail.com</p>
+        <br />
+      </div>
+
+      <div id="link_wrap">
+        <p id="link_heading">FOLLOW US ON</p>
+
+        <i class="fab fa-twitter"></i>
+        <p id="personal_text">https://www.twitter.com</p>
+        <br />
+        <i class="fab fa-youtube"></i>
+        <p id="personal_text">https://www.youtube.com</p>
+        <br />
+        <i class="fab fa-facebook"></i>
+        <p id="personal_text">https://www.facebook.com</p>
+        <br />
+        <i class="fab fa-instagram"></i>
+        <p id="personal_text">https://www.instagram.com</p>
+        <br />
+      </div>
+
+      <div id="complaint_wrap">
+        <p id="complaint_heading">NEED HELP!</p>
+        <div id="complaint_container">
+          <input
+            type="text"
+            id="complaint_email"
+            placeholder="Your Email:"
+            maxlength="20"
+          />
+          <textarea
+            name="area"
+            id="complaint_message"
+            cols="30"
+            rows="4"
+            placeholder="Type your query here:"
+          ></textarea>
+          <br />
+          <input type="submit" id="query_send" value="Send" />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_centerline">
+      <p id="copyrights">copyright@2020 | All rights are reserved.</p>
+      <p id="copyrights">
+        <a href="myprivacy">Privacy Policy</a>
+        <a href="myprivacy">Terms and Conditions</a>
+      </p>
+      <p id="copyrights">Website Designer : Mr. Muhammad Zaid</p>
+    </div>
+
+    <!-------------------------- SCROLL TO TOP BUTTON -->
+
+    <div id="scrol_button">
+      <a href="#"><i class="fas fa-arrow-circle-up"></i> </a>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="display_trainer.js"></script>
+
+    <script>
+      var register_trainer = document.querySelector("#profile_container");
+      register_trainer.addEventListener("click", openFormFun);
+
+      function openFormFun() {
+        console.log("I ma working");
+        window.location.href = "seeker_registration.html";
+      }
+    </script>
+  </body>
+</html>

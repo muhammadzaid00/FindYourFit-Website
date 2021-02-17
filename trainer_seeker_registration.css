@@ -1,0 +1,100 @@
+/* GENERAL CSS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: url("img/trainer.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* BOTH REGISTRATION PAGES COMMON CSS */
+
+#wrap {
+  max-width: 60%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 40px;
+  color: #fff;
+}
+
+#wrap h1 {
+  text-align: center;
+}
+#subheading {
+  text-align: justify;
+}
+
+#seeker_form,
+#trainer_form {
+  width: 50%;
+  margin: 5px auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+#tr_selection {
+  width: 100%;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+#buttons {
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+input[type="button"],
+input[type="submit"] {
+  width: 40%;
+  padding: 5px 0px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  background: #0792e9;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  margin: 20px auto 5px auto;
+}
+
+input[type="submit"]:hover {
+  background: #fff;
+  color: #076ead;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background: #fff;
+  color: #076ead;
+  cursor: pointer;
+}
+
+/* for checkboxes and radio buttons */
+
+p {
+  width: 100%;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+}

@@ -1,0 +1,68 @@
+/* <!----------------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: url("img/trainer.jpg") no-repeat center center;
+  background-size: cover;
+}
+#forgot_container {
+  border: 2px solid black;
+  width: 40%;
+  margin: 200px auto;
+  padding: 24px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#forgot_email {
+  /* border: 2px solid black; */
+  margin: 4px;
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+#forgot_email > label {
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+#user_email {
+  width: 80%;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+#send_email {
+  /* border: 2px solid pink; */
+  width: 100%;
+  padding: 8px 0px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: #0792e9;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+#send_email:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

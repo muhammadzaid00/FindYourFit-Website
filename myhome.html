@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c1fde17a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="header_home.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="instructions_home&about.css" />
+    <link rel="stylesheet" href="signup&signin.css" />
+
+    <title>Home | Find Your Fit</title>
+  </head>
+  <body>
+    <!--------------------------- Navigation Bar -->
+
+    <nav>
+      <div id="logo">
+        <img src="img/logo.png" alt="" height="40px" width="40px" />
+      </div>
+
+      <div id="container">
+        <div id="name">
+          <h1>Find Your Fit</h1>
+        </div>
+
+        <div id="bar">
+          <ul>
+            <li><a href="myhome.html">Home </a></li>
+            <li><a href="myabout.html" id="about_tab">About </a></li>
+            <li><a href="myservices.html" id="service_tab">Services </a></li>
+            <li><a href="mytrainer.html" id="trainer_tab">Trainers </a></li>
+            <li><a href="myblogs.html" id="blog_tab">Blogs </a></li>
+            <li><a href="myhistory.html">My History </a></li>
+            <li><a href="mycontact.html">Contact </a></li>
+            <li><a href="#" id="logout_tab">Logout </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!----------------------------- Header Section -->
+
+    <header>
+      <div id="header_container">
+        <div id="heading">
+          <h1>ARE YOU LOOKING FOR A FITNESS TRAINER?</h1>
+          <br />
+          <p>Join us now!</p>
+        </div>
+
+        <div id="buttons">
+          <div id="signup">
+            <button onclick="openForm()">Sign up as Fitness Seeker</button>
+          </div>
+
+          <div id="signup">
+            <button onclick="openForm()">Sign up as Fitness Trainer</button>
+          </div>
+        </div>
+
+        <p class="secondp">If already registered, sign in!</p>
+
+        <div id="signin_button">
+          <button onclick="opensigninForm()">Sign in</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Signup Section for BOTH -->
+
+    <div id="signup_container">
+      <button id="cross_button" onclick="closeForm()">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <h4>Sign up Form</h4>
+      <form action="" id="form_id">
+        <div id="signup_fields">
+          <label for="myname"><i class="fas fa-user"></i><b>Name</b></label>
+          <input
+            type="text"
+            id="seeker_name"
+            placeholder="Enter your Name:"
+            name="myname"
+            required
+          />
+          <label for="email"><i class="far fa-envelope"></i><b>Email</b></label>
+          <input
+            type="email"
+            id="seeker_email"
+            placeholder="Enter your email:"
+            name="email"
+            required
+          />
+
+          <label for="password"
+            ><i class="fas fa-lock"></i><b>Password</b></label
+          >
+          <input
+            type="password"
+            id="seeker_password"
+            placeholder="Enter your password:"
+            name="password"
+            required
+          />
+        </div>
+
+        <div id="signup_btn">
+          <button type="submit" id="send_btn">Signup</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- SignIN Section -->
+
+    <div id="signin_container">
+      <button id="cross_button" onclick="closesigninForm()">
+        <i class="fas fa-times"></i>
+      </button>
+      <h4>Sign In Form</h4>
+      <form action="" id="signin_form">
+        <div id="signin_fields">
+          <label for="email"><i class="far fa-envelope"></i><b>Email</b></label>
+          <input
+            type="email"
+            placeholder="Enter your email:"
+            name="email"
+            id="input_email"
+            required
+          />
+
+          <label for="password"
+            ><i class="fas fa-lock"></i><b>Password</b></label
+          >
+          <input
+            type="password"
+            placeholder="Enter your password:"
+            name="password"
+            id="input_password"
+            required
+          />
+        </div>
+
+        <div id="signin_btn">
+          <button type="submit" id="signin_send">Sign in</button>
+        </div>
+      </form>
+
+      <a href="myforgot.html" id="forgot" target="blank">Forgot password?</a>
+    </div>
+
+    <!----------------------------- F SECTION-->
+
+    <div id="list_div">
+      <div class="list_items">
+        <h3></h3>
+        <p></p>
+      </div>
+    </div>
+
+    <!----------------------------- Instruction SECTION-->
+
+    <div id="forboth_containers">
+      <div id="instruction_container">
+        <h1>WHO WE ARE?</h1>
+
+        <p>
+          FIND YOUR FIT is a platform for fitness seekers as well as trainers.
+          It covers all those major services that a normal person needs to
+          remain fit in daily life. Fitness hunters can hire personal trainer
+          and will pay for taking a particular service for some fixed duration
+          and trainers will get paid for their services.
+        </p>
+
+        <div id="instruction">
+          <h5>Fitness Seekers</h5>
+          <p>
+            FIND YOUR FIT System is a portal that provides easiness to fitness
+            seekers as well as fitness trainers. It provides individual portal
+            for seekers where they can signup, become the member of website and
+            can hire a personal trainer. On our platform, seekers can search
+            trainer according to the service which they want to get and can
+            submit query to admin.<br />
+          </p>
+
+          <h5>Fitness Trainers</h5>
+          <p>
+            FIND YOUR FIT provides an opportunity to the trainers where they can
+            register themselves and provide services. Trainer portal contains
+            profiles of trainers. It contains their services along fee
+            structure. Trainers will be paid for their services according to the
+            fees structure. Therefore, it is a platform for trainers where they
+            can earn handsom amount.
+          </p>
+          <p>
+            Click on the below links to read the procedure of hiring personal
+            trainer and how can you register yourself as a trainer.
+          </p>
+        </div>
+
+        <div id="next_page">
+          <a href="myabout.html#steps_container">Hiring Personal Trainer</a>
+          <br />
+          <a href="#.html"> | </a> <br />
+          <a href="myabout.html#steps_container">Register as a Trainer</a>
+          <br />
+        </div>
+      </div>
+
+      <!----------------------------- FAQS SECTION -->
+
+      <div id="faq_container">
+        <h3>Frequently Asked Questions?</h3>
+
+        <div id="questions_container">
+          <div class="myquestions">
+            <h6>How can I hire trainer?<i class="fas fa-chevron-down"></i></h6>
+          </div>
+          <p class="answer">
+            You can hire a personal trainer by signing up as a fitness seeker
+            and by filling up a from. Admin will respond to you and give you
+            contact number of trainer.
+          </p>
+          <div class="myquestions">
+            <h6>
+              How can I register my self as trainer?<i
+                class="fas fa-chevron-down"
+              ></i>
+            </h6>
+          </div>
+          <p class="answer">
+            You can reister yourself by signing up as a fitness trainer and by
+            filling up a from. Admin will respond to you and verify your cv or
+            certifications.
+          </p>
+          <div class="myquestions">
+            <h6>How a trainer get paid?<i class="fas fa-chevron-down"></i></h6>
+          </div>
+          <p class="answer">
+            Trainer will get paid by admin. Admin will be responsible for every
+            transaction.
+          </p>
+          <div class="myquestions">
+            <h6>
+              Can I choose trainer by myself or admin will suggest me?<i
+                class="fas fa-chevron-down"
+              ></i>
+            </h6>
+          </div>
+          <p class="answer">
+            Both options are available. If you want to choose trainer according
+            to your choice then go to trainers page and search any trainer. Copy
+            the name of that trainer and paste in the signup form field. Admin
+            will provide you that trainer.
+          </p>
+          <div class="myquestions">
+            <h6>
+              What happend if I left trainer'name field blank?<i
+                class="fas fa-chevron-down"
+              ></i>
+            </h6>
+          </div>
+          <p class="answer">
+            Admin will suggest you that trainer who is free according to your
+            time.
+          </p>
+          <div class="myquestions">
+            <h6>
+              Do admin charge for every service?<i
+                class="fas fa-chevron-down"
+              ></i>
+            </h6>
+          </div>
+          <p class="answer">
+            Yes admin will take 20% commission from every service.
+          </p>
+          <div class="myquestions">
+            <h6>
+              Can fitness seeker quit service?<i
+                class="fas fa-chevron-down"
+              ></i>
+            </h6>
+          </div>
+          <p class="answer">
+            Yes, a fitness seeker can quit service but fee will not be
+            refundable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------- FOOTER SECTION -->
+
+    <div id="footer_wrap">
+      <div id="about_wrap">
+        <p id="about_heading">ABOUT US</p>
+        <p id="about_line">
+          We are hiring trainers for fitness seekers. Fitness seekers can search
+          and find their trainer through our website. Trainers also can register
+          themselves for training.
+        </p>
+      </div>
+
+      <div id="address_wrap">
+        <p id="address_heading">ADDRESS</p>
+
+        <i class="fa fa-map-marker"></i>
+        <p id="personal_text">Lahore, Pakistan</p>
+        <br />
+        <i class="fa fa-whatsapp"></i>
+        <p id="personal_text">+92-303-6223609</p>
+        <br />
+        <i class="fa fa-envelope-o"></i>
+        <p id="personal_text">mzaid6752@gmail.com</p>
+        <br />
+      </div>
+
+      <div id="link_wrap">
+        <p id="link_heading">FOLLOW US ON</p>
+
+        <i class="fab fa-twitter"></i>
+        <p id="personal_text">https://www.twitter.com</p>
+        <br />
+        <i class="fab fa-youtube"></i>
+        <p id="personal_text">https://www.youtube.com</p>
+        <br />
+        <i class="fab fa-facebook"></i>
+        <p id="personal_text">https://www.facebook.com</p>
+        <br />
+        <i class="fab fa-instagram"></i>
+        <p id="personal_text">https://www.instagram.com</p>
+        <br />
+      </div>
+
+      <div id="complaint_wrap">
+        <p id="complaint_heading">NEED HELP!</p>
+        <form id="complaint_container">
+          <input
+            type="text"
+            id="complaint_email"
+            placeholder="Your Email:"
+            maxlength="30"
+          />
+          <textarea
+            name="area"
+            id="complaint_message"
+            cols="30"
+            rows="4"
+            placeholder="Type your query here:"
+          ></textarea>
+          <br />
+          <input
+            type="submit"
+            id="query_send"
+            value="Send"
+            onclick="sendEmailToAdmin()"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div id="footer_centerline">
+      <p id="copyrights">copyright@2020 | All rights are reserved.</p>
+      <p id="copyrights">
+        <a href="myprivacy">Privacy Policy</a>
+        <a href="myprivacy">Terms and Conditions</a>
+      </p>
+      <p id="copyrights">Website Designer : Mr. Muhammad Zaid</p>
+    </div>
+
+    <!-------------------------- SCROLL TO TOP BUTTON -->
+
+    <div id="scrol_button">
+      <a href="#"><i class="fas fa-arrow-circle-up"></i> </a>
+    </div>
+
+    <!-------------------------- JAVASCRIPT FOR FAQS -->
+
+    <script>
+      var ques = document.getElementsByClassName("myquestions");
+      var i;
+      var len = ques.length;
+
+      for (i = 0; i < len; i++) {
+        ques[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+      function openForm() {
+        document.getElementById("signup_container").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("signup_container").style.display = "none";
+      }
+
+      function opensigninForm() {
+        document.getElementById("signin_container").style.display = "block";
+      }
+
+      function closesigninForm() {
+        document.getElementById("signin_container").style.display = "none";
+      }
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="footer_email.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

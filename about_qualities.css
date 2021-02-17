@@ -1,0 +1,127 @@
+/* <!-- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* <!-- QUALITIES SECTION--> */
+
+#quality_container {
+  background-color: gainsboro;
+  width: 100%;
+  padding: 30px 0px 10px 0px;
+  margin: 0px auto;
+  /* border: 2px solid black; */
+}
+
+#quality_container > h1 {
+  width: 50%;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+#quality_container > h1:hover {
+  text-decoration: underline;
+}
+#quality_container #my_qualities {
+  width: 80%;
+  /* border: 2px solid black; */
+  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+#my_qualities #one,
+#my_qualities #two,
+#my_qualities #three,
+#my_qualities #four,
+#my_qualities #five,
+#my_qualities #six {
+  padding: 0px 25px 10px 25px;
+  /* border: 2px solid black; */
+  width: 33%;
+}
+
+#my_qualities #one h3,
+#my_qualities #two h3,
+#my_qualities #three h3,
+#my_qualities #four h3,
+#my_qualities #five h3,
+#my_qualities #six h3 {
+  color: black;
+  padding: 10px 2px;
+}
+
+#my_qualities #one p,
+#my_qualities #two p,
+#my_qualities #three p,
+#my_qualities #four p,
+#my_qualities #five p,
+#my_qualities #six p {
+  color: grey;
+  padding: 5px 2px;
+}
+#one .fas {
+  font-size: 60px;
+  color: blue;
+}
+
+#two .fas {
+  font-size: 60px;
+  color: red;
+}
+
+#three .fas {
+  font-size: 60px;
+  color: green;
+}
+
+#four .fas {
+  font-size: 60px;
+  color: palevioletred;
+}
+
+#five .far {
+  font-size: 60px;
+  color: yellow;
+}
+
+#six .fab {
+  font-size: 60px;
+  color: orangered;
+}
+
+#my_qualities #one h3,
+#my_qualities #two h3,
+#my_qualities #three h3,
+#my_qualities #four h3,
+#my_qualities #five h3,
+#my_qualities #six h3 {
+  color: black;
+  padding: 10px 2px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+  #quality_container #my_qualities {
+    flex-direction: column;
+  }
+
+  #my_qualities #one,
+  #my_qualities #two,
+  #my_qualities #three,
+  #my_qualities #four,
+  #my_qualities #five,
+  #my_qualities #six {
+    width: 80%;
+    margin: 0px auto;
+  }
+}

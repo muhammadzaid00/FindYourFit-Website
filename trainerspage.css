@@ -1,0 +1,68 @@
+/* GENERAL CSS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* <!-- BEST TRAINERS SECTION --> */
+#besttrainer_container {
+  background-color: gainsboro;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+#besttrainer_container h1 {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+#besttrainer_container h1:hover {
+  text-decoration: underline;
+}
+
+#besttrainer_container #team_container {
+  width: 90%;
+  /* border: 2px solid black; */
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+#besttrainer_container #team_container #first_trainer {
+  padding: 5px 5px 10px 5px;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+}
+
+#team_container #first_trainer img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#team_container #first_trainer h1 {
+  font-size: 1.7rem;
+  color: black;
+  padding: 20px 2px;
+}
+
+#team_container #first_trainer p {
+  /* border: 2px solid black; */
+  color: rgb(163, 154, 154);
+  width: 80%;
+  margin: 0px auto;
+}
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  #besttrainer_container #team_container {
+    flex-direction: column;
+  }
+}

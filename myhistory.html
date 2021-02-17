@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c1fde17a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="history.css" />
+
+    <title>My History | Find Your Fit</title>
+  </head>
+  <body>
+    <!--------------------------- Navigation Bar -->
+
+    <nav>
+      <div id="logo">
+        <img src="img/logo.png" alt="" height="40px" width="40px" />
+      </div>
+
+      <div id="container">
+        <div id="name">
+          <h1>Find Your Fit</h1>
+        </div>
+
+        <div id="bar">
+          <ul>
+            <li><a href="myhome.html">Home </a></li>
+            <li><a href="myabout.html" id="about_tab">About </a></li>
+            <li><a href="myservices.html" id="service_tab">Services </a></li>
+            <li><a href="mytrainer.html" id="trainer_tab">Trainers </a></li>
+            <li><a href="myblogs.html" id="blog_tab">Blogs </a></li>
+            <li><a href="mycontact.html">Contact </a></li>
+            <li><a href="#" id="logout_tab">Logout </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!----------------------------- Seeker history -->
+
+    <div id="history_whole_container">
+      <div id="history_container">
+        <h1 id="change_line">
+          Your history will shown here when you hire a trainer.
+        </h1>
+        <p>
+          <span></span>
+        </p>
+        <br />
+        <p></p>
+        <h4></h4>
+        <br /><br />
+        <p></p>
+        <h4></h4>
+      </div>
+    </div>
+
+    <!----------------------------- JUST FOR MAKING NEW LINE -->
+
+    <div id="changing_whole_container">
+      <div id="changing_container">
+        <h1 id="new_line">Your Service has been cancelled.</h1>
+      </div>
+    </div>
+
+    <!----------------------------- QUIT TRAINING -->
+
+    <div id="quit_training">
+      <button onclick="cancel_request()">
+        Click here to cancel your training.
+      </button>
+    </div>
+    <!----------------------------- Notice -->
+
+    <div id="notice_container">
+      <h1>Important Notice</h1>
+      <p>
+        In order to start your service, please pay 3000/Rs. as service charges
+        to this <span>Bank Account Number: XXXXXXXXXXXX</span> and send the copy
+        to the admin at <span>Email Address: mzaid6752@gmail.com</span> for one
+        month. After verification, Admin will share Contact Number of trainer
+        with you and your training will start.
+      </p>
+      <br />
+      <br /><br />
+
+      <h4>
+        Thankyou for using our service. Please feel free to ask your quiries.
+      </h4>
+    </div>
+
+    <!----------------------------- FOOTER SECTION -->
+
+    <div id="footer_wrap">
+      <div id="about_wrap">
+        <p id="about_heading">ABOUT US</p>
+        <p id="about_line">
+          We are hiring trainers for fitness seekers. Fitness seekers can search
+          and find their trainer through our website. Trainers also can register
+          themselves for training.
+        </p>
+      </div>
+
+      <div id="address_wrap">
+        <p id="address_heading">ADDRESS</p>
+
+        <i class="fa fa-map-marker"></i>
+        <p id="personal_text">Lahore, Pakistan</p>
+        <br />
+        <i class="fa fa-whatsapp"></i>
+        <p id="personal_text">+92-303-6223609</p>
+        <br />
+        <i class="fa fa-envelope-o"></i>
+        <p id="personal_text">mzaid6752@gmail.com</p>
+        <br />
+      </div>
+
+      <div id="link_wrap">
+        <p id="link_heading">FOLLOW US ON</p>
+
+        <i class="fab fa-twitter"></i>
+        <p id="personal_text">https://www.twitter.com</p>
+        <br />
+        <i class="fab fa-youtube"></i>
+        <p id="personal_text">https://www.youtube.com</p>
+        <br />
+        <i class="fab fa-facebook"></i>
+        <p id="personal_text">https://www.facebook.com</p>
+        <br />
+        <i class="fab fa-instagram"></i>
+        <p id="personal_text">https://www.instagram.com</p>
+        <br />
+      </div>
+
+      <div id="complaint_wrap">
+        <p id="complaint_heading">NEED HELP!</p>
+        <div id="complaint_container">
+          <input
+            type="text"
+            id="complaint_email"
+            placeholder="Your Email:"
+            maxlength="20"
+          />
+          <textarea
+            name="area"
+            id="complaint_message"
+            cols="30"
+            rows="4"
+            placeholder="Type your query here:"
+          ></textarea>
+          <br />
+          <input type="submit" id="query_send" value="Send" />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_centerline">
+      <p id="copyrights">copyright@2020 | All rights are reserved.</p>
+      <p id="copyrights">
+        <a href="myprivacy">Privacy Policy</a>
+        <a href="myprivacy">Terms and Conditions</a>
+      </p>
+      <p id="copyrights">Website Designer : Mr. Muhammad Zaid</p>
+    </div>
+
+    <!-------------------------- SCROLL TO TOP BUTTON -->
+
+    <div id="scrol_button">
+      <a href="#"><i class="fas fa-arrow-circle-up"></i> </a>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="history_db.js"></script>
+  </body>
+</html>

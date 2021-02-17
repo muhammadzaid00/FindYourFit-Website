@@ -1,0 +1,140 @@
+/* <!----------------------------- General CSS --> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  /* background-color: rgba(197, 190, 190, 0.76); */
+  background-color: gainsboro;
+}
+
+/* <!----------------------------- SIGN UP SECTION --> */
+
+#signup_container,
+#signin_container {
+  /* border: 2px solid black; */
+  width: 35%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px;
+  background: url(img/signup.jpg) no-repeat center center;
+  background-size: cover;
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 500px;
+  border-radius: 20px;
+}
+
+#signup_container > h4,
+#signin_container > h4 {
+  width: 100%;
+  color: white;
+  /* border: 2px solid white; */
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: black;
+  font-size: 20px;
+}
+
+#signup_fields,
+#signin_fields {
+  /* border: 2px solid white; */
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#signup_fields > label,
+#signin_fields > label {
+  /* border: 2px solid white; */
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+  color: white;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 80%;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+#signup_btn {
+  width: 100%;
+}
+
+#signup_btn > #send_btn,
+#signin_btn > #signin_send {
+  width: 30%;
+  padding: 5px 0px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: #0792e9;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  margin: 10px auto 5px auto;
+  float: right;
+}
+*/ input[type="submit"]:hover {
+  background: #fff;
+  color: #076ead;
+  cursor: pointer;
+}
+#signup_container > #cross_button,
+#signin_container > #cross_button {
+  margin-top: 12px;
+  border: none;
+  float: right;
+}
+#signup_container > #cross_button > .fas,
+#signin_container > #cross_button > .fas {
+  color: white;
+  font-size: 24px;
+  background-color: black;
+
+  /* border: 2px solid white; */
+}
+#signup_container > #cross_button > .fas:hover,
+#signin_container > #cross_button > .fas:hover {
+  color: gainsboro;
+}
+
+.far,
+.fas {
+  color: white;
+  padding: 5px 10px 5px 5px;
+  font-size: 16px;
+  /* border: 2px solid white; */
+}
+
+/* Forgot password  */
+#forgot {
+  color: white;
+  text-decoration: none;
+}
+#forgot:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}

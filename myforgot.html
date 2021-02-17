@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c1fde17a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="forgot_pass.css" />
+    <title>Forgot Password | Find Your Fit</title>
+  </head>
+  <body>
+    <div id="forgot_container">
+      <div id="forgot_email">
+        <label for="forgot"><b>Email:</b></label>
+        <input
+          type="email"
+          placeholder="Enter your email:"
+          name="forgot"
+          id="user_email"
+          required
+        />
+      </div>
+
+      <div id="forgot_button">
+        <button id="send_email" type="submit" onclick="myForgotPassword()">
+          Click to Proceed
+        </button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+    <script src="forgot_pass.js"></script>
+  </body>
+</html>
